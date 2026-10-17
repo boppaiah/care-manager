@@ -479,6 +479,7 @@ main {
   padding-left: 33px;
 }
 .table-scroll {
+  position: relative;
   overflow-x: auto;
 }
 table {
