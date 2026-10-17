@@ -337,7 +337,7 @@ export function Caseload() {
                                 ? "purple"
                                 : r.label === "Blocked"
                                   ? "amber"
-                                  : "green"
+                                  : "positive"
                           }
                         >
                           {r.overdue ? "Overdue · " : ""}
@@ -400,16 +400,16 @@ function HeartIllustration() {
       fill="none"
       aria-hidden="true"
     >
-      <circle cx="55" cy="50" r="43" stroke="#b7d5c5" strokeDasharray="4 5" />
+      <circle cx="55" cy="50" r="43" stroke="#b0c6dc" strokeDasharray="4 5" />
       <path
         d="M55 73L31 49C15 30 40 15 55 34C70 15 95 30 79 49Z"
-        fill="#c5e2d1"
-        stroke="#527c63"
+        fill="#b9d3ee"
+        stroke="#486786"
         strokeWidth="2"
       />
       <path
         d="M29 53H43L49 41L58 63L65 51H82"
-        stroke="#527c63"
+        stroke="#486786"
         strokeWidth="2"
       />
     </svg>

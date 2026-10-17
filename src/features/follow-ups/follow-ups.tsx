@@ -173,7 +173,7 @@ export function FollowUps({
                             ? "danger"
                             : t.status === "BLOCKED"
                               ? "amber"
-                              : "green"
+                              : "positive"
                         }
                       >
                         {statusLabel(t.status)}

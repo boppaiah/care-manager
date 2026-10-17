@@ -140,7 +140,9 @@ export function Prep({ clientId }: { clientId: string }) {
                   <div className="section-heading">
                     <Badge
                       tone={
-                        o.reviewStatus === "NEEDS_REVIEW" ? "purple" : "green"
+                        o.reviewStatus === "NEEDS_REVIEW"
+                          ? "purple"
+                          : "positive"
                       }
                     >
                       {o.reviewStatus === "NEEDS_REVIEW"
@@ -483,7 +485,7 @@ export function Prep({ clientId }: { clientId: string }) {
                 >
                   <strong>{t.title}</strong>
                   <p>{t.description}</p>
-                  <Badge tone={t.status === "BLOCKED" ? "amber" : "green"}>
+                  <Badge tone={t.status === "BLOCKED" ? "amber" : "positive"}>
                     {statusLabel(t.status)}
                   </Badge>
                   <small>

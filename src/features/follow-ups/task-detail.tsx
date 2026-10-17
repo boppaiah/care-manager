@@ -29,7 +29,7 @@ export function TaskDetail({ id }: { id: string }) {
         title={task.title}
         description="A clear next step, with the full story behind it."
         action={
-          <Badge tone={isOverdue(task, today()) ? "danger" : "green"}>
+          <Badge tone={isOverdue(task, today()) ? "danger" : "positive"}>
             {statusLabel(task.status)}
             {isOverdue(task, today()) ? " · Overdue" : ""}
           </Badge>
