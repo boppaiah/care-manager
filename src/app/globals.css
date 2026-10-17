@@ -1,5 +1,6 @@
 @import "tailwindcss";
 :root {
+  --font-size-detail: 13px;
   --ink: #1e2f41;
   --muted: #64798f;
   --accent: #264769;
@@ -93,7 +94,7 @@ label {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  font-size: 12px;
+  font-size: var(--font-size-detail);
   font-weight: 600;
   color: #4d5e6e;
 }
@@ -122,7 +123,7 @@ p {
 small {
   display: block;
   color: var(--muted);
-  font-size: 11px;
+  font-size: var(--font-size-detail);
   line-height: 1.6;
 }
 .muted {
@@ -153,7 +154,7 @@ small {
   letter-spacing: -0.6px;
 }
 .brand small {
-  font-size: 9px;
+  font-size: var(--font-size-detail);
   letter-spacing: 3px;
   font-weight: 600;
   color: #526477;
@@ -169,7 +170,7 @@ small {
   color: #385674;
 }
 .nav-label {
-  font-size: 9px;
+  font-size: var(--font-size-detail);
   letter-spacing: 1.8px;
   color: #536577;
   margin: 51px 12px 15px;
@@ -203,7 +204,7 @@ nav a.active {
   border: 1px solid #d5e2ef;
   border-radius: 9px;
   padding: 15px;
-  font-size: 8px;
+  font-size: var(--font-size-detail);
   letter-spacing: 1px;
   color: #4d5e70;
   background: #edf4fb;
@@ -224,7 +225,7 @@ nav a.active {
   margin-right: 5px;
 }
 .reset {
-  font-size: 11px;
+  font-size: var(--font-size-detail);
   border: 0;
   background: transparent;
   color: #4d5e70;
@@ -237,7 +238,7 @@ nav a.active {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 12px;
+  font-size: var(--font-size-detail);
 }
 .avatar {
   width: 34px;
@@ -245,7 +246,7 @@ nav a.active {
   border-radius: 50%;
   background: #ecede1;
   color: #3a5570;
-  font-size: 10px;
+  font-size: var(--font-size-detail);
   font-weight: 600;
   display: inline-flex;
   align-items: center;
@@ -270,14 +271,14 @@ nav a.active {
   justify-content: space-between;
   padding: 0 40px;
   color: #4e5f71;
-  font-size: 9px;
+  font-size: var(--font-size-detail);
   letter-spacing: 1.3px;
 }
 .demo-pill {
   border: 1px solid #d5e0eb;
   padding: 5px 10px;
   border-radius: 20px;
-  font-size: 10px;
+  font-size: var(--font-size-detail);
   letter-spacing: 0;
   color: #4b5b6c;
 }
@@ -298,7 +299,7 @@ main {
   font-size: 13px;
 }
 .eyebrow {
-  font-size: 9px;
+  font-size: var(--font-size-detail);
   letter-spacing: 1.7px;
   font-weight: 600;
   color: #4f6072;
@@ -325,12 +326,12 @@ main {
   color: #384e64;
 }
 .greeting .eyebrow {
-  font-size: 8px;
+  font-size: var(--font-size-detail);
   color: #4a5b6c;
 }
 .greeting p {
   margin: 0;
-  font-size: 12px;
+  font-size: var(--font-size-detail);
   color: #506172;
 }
 .greeting-art {
@@ -375,7 +376,7 @@ main {
   line-height: 1.2;
 }
 .stat span {
-  font-size: 11px;
+  font-size: var(--font-size-detail);
   font-weight: 600;
   color: #4f6072;
 }
@@ -412,13 +413,13 @@ main {
 }
 .section-heading .muted {
   margin-bottom: 0;
-  font-size: 11px;
+  font-size: var(--font-size-detail);
 }
 .count {
   background: #e8eef5;
   color: #4c5d6e;
   border-radius: 20px;
-  font-size: 10px;
+  font-size: var(--font-size-detail);
   padding: 4px 8px;
   margin-left: 7px;
   vertical-align: middle;
@@ -431,7 +432,7 @@ main {
   padding: 3px;
 }
 .tabs button {
-  font-size: 10px;
+  font-size: var(--font-size-detail);
   padding: 7px 11px;
   background: transparent;
   border: 0;
@@ -453,13 +454,13 @@ main {
   padding: 10px 0 18px;
 }
 .filters label {
-  font-size: 10px;
+  font-size: var(--font-size-detail);
   font-weight: 400;
   min-width: 95px;
 }
 .filters input,
 .filters select {
-  font-size: 11px;
+  font-size: var(--font-size-detail);
   padding: 9px;
   min-height: 35px;
 }
@@ -487,7 +488,7 @@ table {
   text-align: left;
 }
 th {
-  font-size: 9px;
+  font-size: var(--font-size-detail);
   font-weight: 500;
   letter-spacing: 0.4px;
   text-transform: uppercase;
@@ -512,7 +513,7 @@ td:first-child {
 }
 .client-name {
   display: block;
-  font-size: 12px;
+  font-size: var(--font-size-detail);
   font-weight: 600;
   color: #384a5d;
 }
@@ -532,7 +533,7 @@ td:first-child {
   align-items: center;
   gap: 4px;
   color: #506172;
-  font-size: 10px;
+  font-size: var(--font-size-detail);
 }
 td small {
   font-size: 13px;
@@ -550,7 +551,7 @@ td .row-action {
   align-items: center;
   white-space: nowrap;
   gap: 5px;
-  font-size: 9px;
+  font-size: var(--font-size-detail);
   border-radius: 5px;
   padding: 4px 8px;
   background: #e8eef5;
@@ -574,7 +575,7 @@ td .row-action {
   color: #805f49;
 }
 .priority {
-  font-size: 10px;
+  font-size: var(--font-size-detail);
   text-transform: capitalize;
   white-space: nowrap;
 }
@@ -595,12 +596,12 @@ td .row-action {
   align-items: center;
   justify-content: flex-end;
   gap: 8px;
-  font-size: 10px;
+  font-size: var(--font-size-detail);
   white-space: nowrap;
   color: #485e74;
 }
 .footnote {
-  font-size: 10px;
+  font-size: var(--font-size-detail);
   color: #506173;
   margin: 18px 0;
 }
@@ -625,10 +626,10 @@ td .row-action {
   padding: 15px;
 }
 .client-card strong {
-  font-size: 11px;
+  font-size: var(--font-size-detail);
 }
 .client-card small {
-  font-size: 9px;
+  font-size: var(--font-size-detail);
 }
 .client-card svg {
   margin-left: auto;
@@ -638,12 +639,12 @@ footer {
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
-  font-size: 9px;
+  font-size: var(--font-size-detail);
   color: #4e5f70;
   gap: 20px;
 }
 .back {
-  font-size: 11px;
+  font-size: var(--font-size-detail);
   display: inline-block;
   margin-bottom: 22px;
   color: #4c5d6e;
@@ -691,14 +692,14 @@ hr {
 }
 .error {
   color: #a34339;
-  font-size: 12px;
+  font-size: var(--font-size-detail);
   background: #fff0ed;
   border-radius: 6px;
   padding: 12px;
 }
 .success {
   color: #29527a;
-  font-size: 12px;
+  font-size: var(--font-size-detail);
 }
 .notice {
   background: #f6f5ee;
@@ -706,7 +707,7 @@ hr {
   border-radius: 6px;
   padding: 13px 15px;
   color: #6c6652;
-  font-size: 11px;
+  font-size: var(--font-size-detail);
   margin-top: 18px;
 }
 .timeline {
@@ -731,10 +732,10 @@ hr {
   border-radius: 50%;
 }
 .timeline strong {
-  font-size: 12px;
+  font-size: var(--font-size-detail);
 }
 .timeline p {
-  font-size: 12px;
+  font-size: var(--font-size-detail);
   margin: 8px 0;
   color: #4c5c6d;
 }
@@ -755,10 +756,10 @@ hr {
   gap: 12px;
 }
 .client-context strong {
-  font-size: 12px;
+  font-size: var(--font-size-detail);
 }
 .coverage {
-  font-size: 10px;
+  font-size: var(--font-size-detail);
   color: #4e5f70;
   background: #f1f5fa;
   border-radius: 5px;
@@ -778,7 +779,7 @@ hr {
   margin: 14px 0 8px;
 }
 .observation small {
-  font-size: 10px;
+  font-size: var(--font-size-detail);
 }
 .source-links,
 .inline-actions {
@@ -788,7 +789,7 @@ hr {
   margin-top: 15px;
 }
 .source-links a {
-  font-size: 10px;
+  font-size: var(--font-size-detail);
   color: #6d5e7b;
   display: flex;
   align-items: center;
@@ -798,14 +799,14 @@ hr {
   padding: 4px 7px;
 }
 .inline-actions button {
-  font-size: 10px;
+  font-size: var(--font-size-detail);
   padding: 7px 10px;
 }
 .compact {
-  font-size: 9px;
+  font-size: var(--font-size-detail);
 }
 .compact select {
-  font-size: 10px;
+  font-size: var(--font-size-detail);
   padding: 4px;
 }
 .note {
@@ -818,19 +819,19 @@ hr {
   gap: 10px;
   cursor: pointer;
   padding: 18px 0;
-  font-size: 11px;
+  font-size: var(--font-size-detail);
 }
 .note summary > span:last-child {
   margin-left: auto;
   color: #4d5e6e;
-  font-size: 9px;
+  font-size: var(--font-size-detail);
 }
 .note p {
   background: #f3f8fc;
   border-radius: 6px;
   padding: 16px;
   color: #4f6072;
-  font-size: 12px;
+  font-size: var(--font-size-detail);
 }
 .action-card {
   display: block;
@@ -838,10 +839,10 @@ hr {
   padding: 18px 0;
 }
 .action-card strong {
-  font-size: 12px;
+  font-size: var(--font-size-detail);
 }
 .action-card p {
-  font-size: 11px;
+  font-size: var(--font-size-detail);
   color: #4f6072;
   margin: 8px 0;
 }
@@ -858,7 +859,7 @@ hr {
   border: 0;
   background: none;
   color: #4c5d6e;
-  font-size: 12px;
+  font-size: var(--font-size-detail);
   margin-top: 12px;
 }
 .skip {
@@ -915,7 +916,7 @@ hr {
     width: 15px;
   }
   .stat span {
-    font-size: 10px;
+    font-size: var(--font-size-detail);
   }
   .client-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -973,7 +974,7 @@ hr {
     display: flex;
   }
   nav a {
-    font-size: 11px;
+    font-size: var(--font-size-detail);
     padding: 8px;
   }
   nav a svg {
@@ -985,7 +986,7 @@ hr {
   }
   .topbar {
     height: 44px;
-    font-size: 8px;
+    font-size: var(--font-size-detail);
   }
   .topbar > span:first-child {
     display: none;
@@ -1070,10 +1071,10 @@ hr {
     min-width: 110px;
   }
   .demo-pill {
-    font-size: 9px;
+    font-size: var(--font-size-detail);
   }
   .notice {
-    font-size: 10px;
+    font-size: var(--font-size-detail);
   }
 }
 
