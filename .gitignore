@@ -17,3 +17,13 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Dependencies and generated build/test output
+node_modules/
+.next/
+out/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+next-env.d.ts
