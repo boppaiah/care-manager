@@ -343,7 +343,7 @@ main {
   margin: 22px 0 30px;
 }
 .stat {
-  border: 1px solid var(--line);
+  border: 2px solid #a3bdd8;
   border-radius: 9px;
   background: white;
   padding: 18px 20px;
@@ -353,6 +353,15 @@ main {
   gap: 9px;
   position: relative;
   text-align: left;
+  box-shadow: 0 2px 5px #2647690a;
+  transition:
+    border-color 150ms ease,
+    background-color 150ms ease;
+}
+.stat:hover,
+.stat:focus-visible {
+  border-color: #527da8;
+  background: #f2f7fd;
 }
 .stat svg {
   position: absolute;
@@ -362,12 +371,12 @@ main {
 }
 .stat strong {
   font-size: 31px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
 }
 .stat span {
   font-size: 11px;
-  font-weight: 400;
+  font-weight: 600;
   color: #4f6072;
 }
 .stat:nth-child(4) svg {
